@@ -1,1 +1,1 @@
-# queries
+# My SQL queries
