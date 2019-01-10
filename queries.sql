@@ -20,3 +20,18 @@ exec sp_rename cutomers , cutomers_data;
 exec sp_rename cutomers_data , customers;
 
 TRUNCATE TABLE customers;
+
+use train;
+INSERT INTO customers (name) VALUES ('PRATEEK');
+
+SELECT * FROM customers;
+
+INSERT INTO customers VALUES ('tater', 1);
+
+ALTER TABLE customers 
+ADD number int;
+
+UPDATE customers SET name = 'prateek'
+WHERE number = 2;
+
+TRUNCATE TABLE customers;
